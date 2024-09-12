@@ -51,14 +51,16 @@ if (min + max > 10 && (max <= 5 || min <= 5)) {
 
 ///3.C lav 3 integer variables kaldet x, y and z. Print "Success!" hvis deres sum er 30, men ingen af dem har værdien 10, 20 eller 30. Ellers print "Failure!".
 
-int x = (int)random(1, 35);
-int y = (int)random(1, 35);
-int z = (int)random(1, 35);
+
+
+int x = (int)random(1,30);
+int y = (int)random(1,30);
+int z = (int)random(1,30);
 int sum = x+y+z;
 
-if (x!=10 && x!= 20 && x!=30 && y!=10 && y!=20 && y!=30 && z!=10 && z!=20 && z!=30 && sum==30) {
+if(x!=10 && x!= 20 && x!=30 && y!=10 && y!=20 && y!=30 && z!=10 && z!=20 && z!=30 && sum==30){
   println("Succces");
-} else {
+}else{
   println("Failure");
 }
 println(x);
