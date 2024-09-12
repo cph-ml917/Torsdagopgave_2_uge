@@ -2,16 +2,17 @@
 
 //6.a-6.e
 
-color red_light = color(255, 49, 49);
-color orange_light = color(255, 95, 31);
-color green_light = color(15, 255, 80);
-color notOn = color(53, 62, 67);
+color redLight = color(255, 49, 49);
+color orangeLight = color(255, 95, 31);
+color greenLight = color(15, 255, 80);
+color lightOff = color(53, 62, 67);
 
 
 void setup() {
   size(400, 400);
   background(255);
-  fill(0);
+  fill(43, 52, 57);
+  strokeWeight(4);
   rect(100, 50, 200, 300);
 }
 
@@ -19,24 +20,24 @@ void setup() {
 void draw() {
 
   switch(frameCount%400) {
-    //Her aktiveres både det røde lys
+    //Her aktiveres det røde lys
     case(1):
-    trafficLights(red_light, notOn, notOn);
+    trafficLights(redLight, lightOff, lightOff);
     break;
 
     //Her aktiveres både det røde og det orange lys
     case(100):
-    trafficLights(red_light, orange_light, notOn);
+    trafficLights(redLight, orangeLight, lightOff);
     break;
 
     //Her aktiveres det grønne lys
     case(200):
-    trafficLights(notOn, notOn, green_light);
+    trafficLights(lightOff, lightOff, greenLight);
     break;
 
-    //Her aktiveres det orange lys alene før der bliver rødt
+    //Her aktiveres det orange lys alene før der skiftes til rødt
     case(300):
-    trafficLights(notOn, orange_light, notOn);
+    trafficLights(lightOff, orangeLight, lightOff);
     break;
   }
 }
