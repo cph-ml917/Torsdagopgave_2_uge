@@ -1,7 +1,7 @@
 //-----------Task 3-----------//
 
 
-//3.a lav 2 integer variables kaldet a og b. Print "Success!" hvis en af dem har værdien 10 eller hvis summen af de to variabler er 10. Hvis ikke, så print "Failure!".
+//3.a
 
 //I dette eksempel har a en værdi på 10. Derfor printes "Success!":
 int a=10;
@@ -35,7 +35,7 @@ if (e+f==10 || e==10 || f==10) {
 
 //----------------------------//
 
-//3.b lav 2 integer variables kaldet min and max. Print "Success!" hvis følgende betingelse er opfyldt: summen af dem skal være højere end 10 og et af tallene skal være mindre end eller lig med 5.
+//3.b
 int min = (int)random(1, 9);
 int max = (int)random(1, 9);
 
@@ -49,9 +49,7 @@ if (min + max > 10 && (max <= 5 || min <= 5)) {
 //----------------------------//
 
 
-///3.C lav 3 integer variables kaldet x, y and z. Print "Success!" hvis deres sum er 30, men ingen af dem har værdien 10, 20 eller 30. Ellers print "Failure!".
-
-
+///3.C
 
 int x = (int)random(1,30);
 int y = (int)random(1,30);

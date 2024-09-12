@@ -13,7 +13,8 @@ void setup() {
   background(255);
   fill(43, 52, 57);
   strokeWeight(4);
-  rect(100, 50, 200, 300);
+  rect(170, 200, 60, 300);
+  rect(125, 50, 150, 300);
 }
 
 
