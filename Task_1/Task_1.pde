@@ -9,40 +9,40 @@ String month = "May";
 
 switch (month) {
 case "January":
-  println("31");
+  println(month+" has 31 days");
   break;
 case "Feburary":
-  println("28");
+  println(month+" has 28 days");
   break;
 case "Marts":
-  println("31");
+  println(month+" has 31 days");
   break;
 case "April":
-  println("30");
+  println(month+" has 30");
   break;
 case "May":
-  println("31");
+  println(month+" has 31 days");
   break;
 case "June":
-  println("30");
+  println(month+" has 30 days");
   break;
 case "July":
-  println("31");
+  println(month+" has 31 days");
   break;
 case "August":
-  println("31");
+  println(month+" has 31 days");
   break;
 case "September":
-  println("30");
+  println(month+" has 30 days");
   break;
 case "October":
-  println("31");
+  println(month+" has 31 days");
   break;
 case "November":
-  println("30");
+  println(month+" has 30 days");
   break;
 case "December":
-  println("31");
+  println(month+" has 31 days");
   break;
 default:
   println("this month does not exist");
